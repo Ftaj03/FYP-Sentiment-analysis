@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SentiScope</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" href="icon.png" type="image/x-icon" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="index.js"></script>
+
+</head>
+<!-- Header -->
+<header class="bg-white shadow-sm sticky top-0 z-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between items-center h-16">
+      <!-- Logo -->
+      <div class="flex items-center space-x-2">
+        <img src="https://img.icons8.com/fluency/48/brain.png" alt="SentiScope Logo" class="h-8 w-8" />
+        <span class="text-xl font-bold text-indigo-700">Senti<span class="text-purple-600">Scope</span></span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<body class="bg-gradient-to-b from-indigo-50 to-white text-gray-800 font-sans">
+
+  <!-- Header Section -->
+  <section class="text-center px-6 py-16">
+    <div class="flex justify-center items-center mb-4">
+      <div class="bg-gradient-to-r from-indigo-500 to-purple-500 p-3 rounded-full">
+        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" stroke-width="2"
+             viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round"
+                d="M12 6v6l4 2m6-4a9 9 0 11-18 0 9 9 0 0118 0z"/>
+        </svg>
+      </div>
+      <h1 class="text-4xl font-extrabold text-indigo-700 ml-3">SentiScope</h1>
+    </div>
+    <p class="text-lg text-gray-600 max-w-2xl mx-auto">Intelligent Aspect-Based Sentiment Analysis Designed for E-commerce Insights.</p>
+
+    <!-- Features Icons -->
+    <div class="mt-6 flex flex-wrap justify-center gap-4 text-sm font-medium text-gray-500">
+      <span class="flex items-center gap-1"><span class="text-yellow-500">⚡</span> Instant Analysis</span>
+      <span class="flex items-center gap-1"><span class="text-green-500">📊</span> Detailed Insights</span>
+      <span class="flex items-center gap-1"><span class="text-blue-400">👥</span> Batch Processing</span>
+      <span class="flex items-center gap-1"><span class="text-purple-500">🔮</span> AI-Powered</span>
+    </div>
+  </section>
+
+  <!-- Feature Cards Section -->
+  <section class="px-6 pb-20 max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
+    <!-- Card 1 -->
+    <div class="bg-white rounded-xl shadow p-6 hover:shadow-md transition">
+      <div class="flex items-center gap-3 mb-3">
+        <div class="bg-blue-100 text-blue-600 p-2 rounded-lg">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
+               viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M12 6v6l4 2m6-4a9 9 0 11-18 0 9 9 0 0118 0z"/>
+          </svg>
+        </div>
+        <h3 class="text-lg font-semibold text-gray-800">Aspect Detection</h3>
+      </div>
+      <p class="text-gray-600 text-sm">Automatically identify and analyze sentiment for product aspects like quality, price, shipping, and more.</p>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="bg-white rounded-xl shadow p-6 hover:shadow-md transition">
+      <div class="flex items-center gap-3 mb-3">
+        <div class="bg-green-100 text-green-600 p-2 rounded-lg">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
+               viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M9 17v-2a4 4 0 018 0v2m-6 4h6m2 0a2 2 0 012-2h-6a2 2 0 01-2 2zm0 0H9a2 2 0 01-2-2h6a2 2 0 012 2z"/>
+          </svg>
+        </div>
+        <h3 class="text-lg font-semibold text-gray-800">Visual Analytics</h3>
+      </div>
+      <p class="text-gray-600 text-sm">Rich visualizations and charts to understand sentiment patterns and trends across your reviews.</p>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="bg-white rounded-xl shadow p-6 hover:shadow-md transition">
+      <div class="flex items-center gap-3 mb-3">
+        <div class="bg-purple-100 text-purple-600 p-2 rounded-lg">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
+               viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M17 20h5v-2a4 4 0 00-4-4h-1M9 20H4v-2a4 4 0 014-4h1m3 0h.01"/>
+          </svg>
+        </div>
+        <h3 class="text-lg font-semibold text-gray-800">Bulk Processing</h3>
+      </div>
+      <p class="text-gray-600 text-sm">Upload CSV files with hundreds of reviews for comprehensive sentiment analysis and reporting.</p>
+    </div>
+  </section>
+
+  <section class="max-w-6xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-2 gap-8"> 
+    <!-- Analyze Single Review -->
+<div class="bg-white shadow rounded-xl p-6">
+  <div class="flex items-center gap-3 mb-4">
+    <!-- Icon Box -->
+    <div class="bg-gradient-to-r from-purple-500 to-pink-400 p-2 rounded-lg text-white">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
+           viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round"
+              d="M7 8h10M7 12h4m-2 8a9 9 0 100-18 9 9 0 000 18z"/>
+      </svg>
+    </div>
+    <h2 class="text-xl font-semibold text-gray-800">Analyze Single Review</h2>
+  </div>
+
+  <!-- Product Name -->
+  <label for="productName" class="block text-sm font-medium text-gray-600 mb-1">Product Name (Optional)</label>
+  <input type="text" id="productName" placeholder="e.g., iPhone 15, Nike Air Max…" 
+         class="w-full mb-4 px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-indigo-400"/>
+
+  <!-- Review Text -->
+  <label for="reviewInput" class="block text-sm font-medium text-gray-600 mb-1">Review Text *</label>
+  <textarea id="reviewInput" rows="5" placeholder="Paste your customer review here…" 
+            class="w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-indigo-400"></textarea>
+  <p class="text-xs text-gray-400 mt-1" id="charCount">0 characters</p>
+
+
+ <label for="singleAspectInput" class="block text-sm font-medium text-gray-600 mt-4 mb-1">Aspects (Optional)</label>
+<div class="flex items-center gap-2 mb-2">
+  <input type="text" id="singleAspectInput" placeholder="e.g., battery life" 
+         class="flex-1 px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-purple-400" />
+  <button onclick="addAspect('single')" 
+          class="px-3 py-2 bg-purple-500 text-white text-sm rounded hover:bg-purple-600">Add</button>
+</div>
+<ul id="singleAspectList" class="flex flex-wrap gap-2 mb-4"></ul>
+
+  <!-- Analyze Button -->
+ <button id="analyzeBtn" onclick="analyzeSingle()" class="w-full mt-4 bg-gradient-to-r from-indigo-500 to-purple-400 hover:from-indigo-600 hover:to-purple-500 text-white py-2 rounded shadow text-sm font-semibold flex items-center justify-center gap-2">
+    <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2"
+         viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round"
+            d="M5 12h14M12 5l7 7-7 7"/>
+    </svg>
+    Analyze Sentiment
+  </button>
+  </div>
+  <!-- Bulk CSV Analysis -->
+  <div class="bg-white shadow rounded-xl p-6">
+    <div class="flex items-center gap-3 mb-4">
+      <div class="bg-green-100 text-green-600 p-2 rounded-lg">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
+             viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round"
+                d="M4 4v16h16V4H4zm4 4h8m-4 0v8"/>
+        </svg>
+      </div>
+      <h2 class="text-xl font-semibold text-gray-800">Bulk CSV Analysis</h2>
+    </div>
+
+    <div class="border-2 border-dashed border-gray-300 p-6 rounded-lg text-center text-gray-500">
+      <p class="mb-2">Drop your CSV file here</p>
+      <p class="text-sm mb-4">or click to browse</p>
+      <input type="file" id="csvInput" accept=".csv"
+             class="block mx-auto file:bg-indigo-600 file:text-white file:px-4 file:py-2 file:rounded file:border-0 hover:file:bg-indigo-700"/>
+    </div>
+
+    <div class="mt-4 bg-gray-50 p-4 rounded text-sm text-gray-700">
+      <p class="mb-1 font-medium">CSV Format Requirements:</p>
+      <ul class="list-disc pl-5 space-y-1">
+        <li>Each row should contain one review</li>
+        <li>Maximum recommended: 100 reviews per upload</li>
+      </ul>
+    </div>
+ 
+  
+   <!-- In the Bulk CSV section: -->
+<label for="bulkAspectInput" class="block text-sm font-medium text-gray-600 mt-4 mb-1">Aspects (Optional)</label>
+<div class="flex items-center gap-2 mb-2">
+  <input type="text" id="bulkAspectInput" placeholder="e.g., battery life" 
+         class="flex-1 px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-purple-400" />
+  <button onclick="addAspect('bulk')" 
+          class="px-3 py-2 bg-purple-500 text-white text-sm rounded hover:bg-purple-600">Add</button>
+</div>
+<ul id="bulkAspectList" class="flex flex-wrap gap-2 mb-4"></ul>
+   <!-- Analyze Button -->
+<button id="analyzeCsvBtn" onclick="analyzeCSV()" 
+        class="w-full mt-4 bg-gradient-to-r from-indigo-500 to-purple-400 hover:from-indigo-600 hover:to-purple-500 text-white py-2 rounded shadow text-sm font-semibold flex items-center justify-center gap-2">
+  <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+    <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M12 5l7 7-7 7"/>
+  </svg>
+  Upload & Analyze
+</button>
+
+    <div id="bulkResult" class="mt-4 text-sm text-gray-700"></div>
+  </div>
+</section>
+
+
+  <footer class="w-full py-4 bg-gray-100 text-center text-sm text-gray-600">
+    <p>Made with ❤️ by Farhana Taj</p>
+  </footer>
+</body>
+</html>
